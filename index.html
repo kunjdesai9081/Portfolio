@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break My Site Challenge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://source.unsplash.com/random/1920x1080?technology') no-repeat center center/cover;
+            color: #c9d1d9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(22, 27, 34, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            color: #e1b12c;
+        }
+        .bug-btn {
+            padding: 12px 24px;
+            margin: 10px;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .bug-btn:hover {
+            background: #c0392b;
+        }
+        .bug-report {
+            background: #222;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: left;
+            font-family: monospace;
+            border: 1px solid #555;
+            height: 150px;
+            overflow-y: auto;
+            border-radius: 8px;
+        }
+        .projects {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Break My Site Challenge</h1>
+        <p>Find and report bugs by clicking on hidden issues!</p>
+        
+        <button class="bug-btn" onclick="reportBug('Broken Submit Button found!')">Broken Button</button>
+        
+        <h2>Bug Reports</h2>
+        <div class="bug-report" id="bugConsole">
+            <p>[INFO] Bug report initialized...</p>
+        </div>
+        <p>Bugs Found: <span id="bugCount">0</span></p>
+        <button class="bug-btn" onclick="submitBugReport()">Submit Bug Report</button>
+
+        <div class="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Automated Testing Suite</h3>
+                <p>A Selenium-based automation testing framework for web applications.</p>
+            </div>
+            <div class="project">
+                <h3>Bug Tracking Dashboard</h3>
+                <p>A real-time dashboard for tracking and managing software bugs.</p>
+            </div>
+            <div class="project">
+                <h3>API Testing Tool</h3>
+                <p>A Postman-based API testing automation tool with test case execution.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 | Created by a Software Tester</div>
+    
+    <script>
+        let bugCounter = 0;
+        let bugList = [];
+        
+        function reportBug(bug) {
+            const consoleDiv = document.getElementById("bugConsole");
+            const p = document.createElement("p");
+            p.textContent = `[BUG] ${bug}`;
+            consoleDiv.appendChild(p);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+            bugCounter++;
+            document.getElementById("bugCount").textContent = bugCounter;
+            bugList.push(bug);
+        }
+        
+        function submitBugReport() {
+            if (bugList.length === 0) {
+                alert("No bugs to report!");
+                return;
+            }
+            
+            let bugReportContent = "Bug Report:\n" + bugList.join("\n");
+            let mailtoLink = `mailto:your.email@example.com?subject=Bug Report&body=${encodeURIComponent(bugReportContent)}`;
+            window.location.href = mailtoLink;
+            
+            alert("Bug report submitted! Thank you for your feedback.");
+        }
+    </script>
+</body>
+</html>
