@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Software Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            color: #fff;
+            background: #e1b12c;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: #1f1f1f;
+        }
+        .bug-report {
+            background: #222;
+            color: #ff4747;
+            padding: 10px;
+            margin-top: 20px;
+            height: 150px;
+            overflow-y: auto;
+            text-align: left;
+            font-family: monospace;
+            border: 1px solid #555;
+        }
+        .toggle-btn, .bug-btn {
+            background: #e1b12c;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .hidden-bug {
+            color: transparent;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>Your Name - Software Tester</header>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a software tester passionate about quality assurance, test automation, and bug tracking.</p>
+        
+        <h2>Skills</h2>
+        <p>Manual Testing | Automation | Selenium | JIRA | Test Cases | API Testing</p>
+        
+        <h2>Projects</h2>
+        <p>Project 1: <a class="btn" href="#">View</a></p>
+        <p>Project 2: <a class="btn" href="#">View</a></p>
+        
+        <h2>Find the Bug!</h2>
+        <p>Click the hidden bugs below to report them.</p>
+        <button class="hidden-bug" onclick="reportBug('Invisible Button doesn’t work!')">[Hidden Bug]</button>
+        <p id="buggy-text" onclick="reportBug('Text overlap issue detected!')">This text has an alignment issue.</p>
+        
+        <h2>Bug Reports</h2>
+        <div class="bug-report" id="bugConsole">
+            <p>[INFO] Bug report initialized...</p>
+        </div>
+        <p>Bugs Found: <span id="bugCount">0</span></p>
+        <button class="bug-btn" onclick="submitBugReport()">Submit Bug Report</button>
+        
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a class="btn" href="#">Connect</a></p>
+    </div>
+    <footer>
+        &copy; 2025 Your Name | Software Testing Portfolio
+    </footer>
+    <script>
+        let bugCounter = 0;
+        let bugList = [];
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                document.body.style.backgroundColor = '#fff';
+                document.body.style.color = '#000';
+            } else {
+                document.body.style.backgroundColor = '#121212';
+                document.body.style.color = '#fff';
+            }
+        }
+        
+        function reportBug(bug) {
+            const consoleDiv = document.getElementById("bugConsole");
+            const p = document.createElement("p");
+            p.textContent = `[BUG] ${bug}`;
+            consoleDiv.appendChild(p);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+            bugCounter++;
+            document.getElementById("bugCount").textContent = bugCounter;
+            bugList.push(bug);
+        }
+        
+        function submitBugReport() {
+            if (bugList.length === 0) {
+                alert("No bugs to report!");
+                return;
+            }
+            
+            let bugReportContent = "Bug Report:\n" + bugList.join("\n");
+            let mailtoLink = `mailto:your.email@example.com?subject=Bug Report&body=${encodeURIComponent(bugReportContent)}`;
+            window.location.href = mailtoLink;
+            
+            alert("Bug report submitted! Thank you for your feedback.");
+        }
+    </script>
+</body>
+</html>
