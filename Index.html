@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunj Desai | Computer Engineer & QA Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-blue-700 tracking-wide">KUNJ DESAI</a>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600">Skills</a>
+            <a href="#experience" class="block py-2 text-gray-600 hover:text-blue-600">Experience</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="gradient-bg text-white min-h-screen flex items-center pt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-blue-200 text-lg font-semibold tracking-wider uppercase mb-2">Hello, I'm</p>
+            <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-4">KUNJ DESAI</h1>
+            <h2 class="text-2xl md:text-3xl font-light text-blue-100 mb-6">Computer Engineer & Quality Assurance Tester</h2>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8 opacity-90">
+                Specializing in Manual & Automation Testing, Web Development, and IoT Systems. I bridge the gap between building robust applications and ensuring perfect software quality.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#experience" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-0.5">View My Work</a>
+                <a href="#contact" class="border-2 border-white/80 text-white px-6 py-3 rounded-full font-bold hover:bg-white/10 transition transform hover:-translate-y-0.5">Let's Connect</a>
+            </div>
+            <div class="flex justify-center space-x-6 mt-12 text-2xl text-blue-100">
+                <a href="mailto:kunjd41@gmail.com" class="hover:text-white transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/KunjDesai" target="_blank" class="hover:text-white transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <span class="text-lg self-center opacity-75"><i class="fa-solid fa-location-dot mr-1"></i> Valsad, Gujarat, India</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-5 gap-12 items-start">
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-blue-600 inline-block pb-2">About Me</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4 text-lg">
+                        Highly motivated Computer Engineer with 3+ years of combined experience in Quality Assurance, Web Development (Full-Stack), and IoT Systems.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Currently serving as a QA Tester, specializing in Manual Testing, Test Execution, and cross-functional collaboration. I bring a proven ability to deliver high-quality software by integrating meticulous Test Planning with deep technical knowledge of the SDLC and STLC frameworks.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                        <p class="text-blue-900 font-medium italic">
+                            "Adept at utilizing JIRA for efficient Defect Reporting and bug tracking, always seeking to leverage development and testing expertise to ensure complete product excellence."
+                        </p>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-blue-600 inline-block pb-2">Education</h2>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="font-bold text-gray-800">Computer Engineering (CGPA: 7.78)</h4>
+                            <p class="text-sm text-blue-600 font-medium">Gujarat Technological University | Completed 2022</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-400 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="font-bold text-gray-800">HSC (Higher Secondary)</h4>
+                            <p class="text-sm text-gray-500">Shree Swaminarayan Dahiba High School, Valsad | Completed 2018</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-1.5"></div>
+                            <h4 class="font-bold text-gray-800">SSC (Secondary School)</h4>
+                            <p class="text-sm text-gray-500">Bai Avabai High School, Valsad | Completed 2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-blue-600 inline-block pb-2">Skills & Expertise</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-bug-slash"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Quality Assurance</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Black, White & Grey Box Testing</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>STLC / SDLC Methodologies</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>JIRA & Bugzilla Management</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Regression & Smoke Testing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>HTML5, CSS3 & JavaScript</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>PHP & Laravel Framework</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Object-Oriented Programming</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Git Version Control System</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 class="text-xl font-bold mb-3">IoT & Hardware</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Embedded Systems Development</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Sensor & Module Integration</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>Hardware Functional Testing</li>
+                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i>IoT Architecture & Protocols</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h4 class="text-md font-bold text-gray-700 uppercase tracking-wider mb-4 text-center md:text-left">Additional Competencies</h4>
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1.5 rounded-full"><i class="fa-solid fa-shield-halved text-blue-600 mr-1.5"></i>Cybersecurity Analysis</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1.5 rounded-full"><i class="fa-solid fa-chart-line text-blue-600 mr-1.5"></i>Digital Marketing (SEO/SEM)</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1.5 rounded-full"><i class="fa-solid fa-eye text-blue-600 mr-1.5"></i>Observation & Attention to Detail</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1.5 rounded-full"><i class="fa-solid fa-comments text-blue-600 mr-1.5"></i>Cross-functional Communication</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1.5 rounded-full"><i class="fa-solid fa-layer-group text-blue-600 mr-1.5"></i>Multi-tasking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-blue-600 inline-block pb-2">Professional Experience</h2>
+            </div>
+
+            <div class="relative border-l-2 border-blue-100 ml-4 md:ml-32">
+                
+                <div class="mb-12 relative pl-6">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="absolute left-[-150px] top-1 hidden md:block text-right w-32">
+                        <span class="text-sm font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">May 2025 - Present</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded md:hidden inline-block mb-2">May 2025 - Present</span>
+                        <h3 class="text-xl font-bold text-gray-900">Quality Assurance Tester</h3>
+                        <h4 class="text-md font-medium text-blue-600 mb-3">Palm Infotech, Surat</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                            <li>Executed manual test cases and comprehensive Test Plans across multiple modules, achieving 98% accuracy in defect detection for new features.</li>
+                            <li>Conducted rigorous regression testing and smoke testing cycles to validate software stability and functionality post-deployment.</li>
+                            <li>Streamlined the Defect Reporting and Bug Tracking process in JIRA/ClickUp, leading to a 20% reduction in average defect resolution time through effective collaboration with the development team.</li>
+                            <li>Managed end-to-end Test Execution and verification activities, including re-testing fixes and tracking status throughout the STLC.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-12 relative pl-6">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="absolute left-[-150px] top-1 hidden md:block text-right w-32">
+                        <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">Apr 2023 - Apr 2025</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded md:hidden inline-block mb-2">Apr 2023 - Apr 2025</span>
+                        <h3 class="text-xl font-bold text-gray-900">Freelance QA & Full-Stack Solutions</h3>
+                        <h4 class="text-md font-medium text-blue-600 mb-3">Self-employed</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                            <li>Delivered full-stack development and QA solutions to 5+ clients, utilizing PHP, Laravel, HTML, CSS, and JavaScript to design and deploy customized web applications.</li>
+                            <li>Developed custom IoT Systems requiring physical hardware-software integration and specific Functional Testing for device reliability.</li>
+                            <li>Authored and executed formal Test Case Designs for web applications, covering UI/UX validation, cross-browser compatibility, and foundational API Testing.</li>
+                            <li>Implemented mitigation strategies to reduce client-reported defect leakage by identifying and documenting bugs early in the delivery phase.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-12 relative pl-6">
+                    <div class="absolute w-4 h-4 bg-blue-400 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="absolute left-[-150px] top-1 hidden md:block text-right w-32">
+                        <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">Sep 2022 - Jan 2023</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded md:hidden inline-block mb-2">Sep 2022 - Jan 2023 (5 Mos)</span>
+                        <h3 class="text-xl font-bold text-gray-900">Software Tester</h3>
+                        <h4 class="text-md font-medium text-blue-600 mb-3">TOPS Technologies Pvt. Ltd</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                            <li>Learned software testing fundamentals and applied diverse testing methodologies (Black, White, Grey box testing).</li>
+                            <li>Tracked and reported software bugs and defects comprehensively using JIRA and Bugzilla platforms.</li>
+                            <li>Contributed heavily to early-stage Test Planning and strategy formulation to map scope requirements against available testing resources.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-blue-600 inline-block pb-2">Projects & Industry Internships</h2>
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-8">
+                <button onclick="switchTab('web-proj')" class="tab-btn px-5 py-2 rounded-lg font-medium text-sm transition bg-blue-600 text-white shadow-sm" id="btn-web-proj">Software & Web Projects</button>
+                <button onclick="switchTab('iot-proj')" class="tab-btn px-5 py-2 rounded-lg font-medium text-sm transition bg-white text-gray-600 hover:bg-gray-50" id="btn-iot-proj">IoT Systems</button>
+                <button onclick="switchTab('intern-proj')" class="tab-btn px-5 py-2 rounded-lg font-medium text-sm transition bg-white text-gray-600 hover:bg-gray-50" id="btn-intern-proj">Internships</button>
+            </div>
+
+            <div id="web-proj" class="tab-content active grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xl"><i class="fa-solid fa-users-gear"></i></span>
+                        <h3 class="text-lg font-bold text-gray-900">Employee Management System</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">A complete dynamic internal platform featuring secure multi-role login controls, customized analytical reports, and holistic employee asset tracking systems built to standard development patterns.</p>
+                    <div class="flex flex-wrap gap-1.5"><span class="bg-gray-100 text-xs px-2.5 py-1 rounded font-medium text-gray-600">PHP</span><span class="bg-gray-100 text-xs px-2.5 py-1 rounded font-medium text-gray-600">Laravel</span><span class="bg-gray-100 text-xs px-2.5 py-1 rounded font-medium text-gray-600">Live Project</span></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="p-2 bg-blue-
