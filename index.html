@@ -3,258 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunj Desai | Computer Engineer & QA Specialist</title>
+    <title>Kunj Desai | Premium Engineering & QA Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
         .gradient-mesh {
-            background-color: #0f172a;
+            background-color: #020617;
             background-image: 
-                radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.5) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.2) 0px, transparent 50%);
+                radial-gradient(at 0% 0%, rgba(29, 78, 216, 0.3) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(79, 70, 229, 0.25) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
         }
         .tab-content { display: none; }
-        .tab-content.active { display: grid; animation: fadeIn 0.5s ease-in-out; }
+        .tab-content.active { display: grid; animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
         
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        /* Custom Premium Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border: 2px solid #020617; border-radius: 8px; }
         ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
 
-        /* Scroll Animation Utility classes */
-        .reveal {
-            position: relative;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0px);
-        }
+        /* Scroll Reveal Animation Classes */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0px); }
+
+        /* Glow effects */
+        .glow-card:hover { box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.4); }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 antialiased overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 antialiased overflow-x-hidden">
 
-    <div class="fixed inset-0 pointer-events-none z-0 opacity-30">
-        <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-600 blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-indigo-600 blur-[120px]"></div>
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-40">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:3.5rem_3.5rem]"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-blue-500/10 blur-[150px]"></div>
+        <div class="absolute bottom-[10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-indigo-500/10 blur-[150px]"></div>
     </div>
 
-    <nav class="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+    <nav class="fixed top-4 left-4 right-4 bg-slate-950/70 backdrop-blur-xl border border-slate-800/60 rounded-2xl z-50 shadow-2xl transition-all max-w-6xl mx-auto">
+        <div class="px-6 md:px-8">
+            <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">KUNJ DESAI</a>
+                    <a href="#home" class="heading-font text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">KUNJ DESAI</a>
                 </div>
-                <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wide">
-                    <a href="#home" class="text-slate-300 hover:text-blue-400 transition-colors">Home</a>
-                    <a href="#about" class="text-slate-300 hover:text-blue-400 transition-colors">About</a>
-                    <a href="#skills" class="text-slate-300 hover:text-blue-400 transition-colors">Skills</a>
-                    <a href="#experience" class="text-slate-300 hover:text-blue-400 transition-colors">Experience</a>
-                    <a href="#projects" class="text-slate-300 hover:text-blue-400 transition-colors">Projects</a>
-                    <a href="#contact" class="text-slate-300 hover:text-blue-400 transition-colors">Contact</a>
+                <div class="hidden md:flex space-x-8 font-medium text-xs tracking-wider uppercase">
+                    <a href="#home" class="text-slate-400 hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="text-slate-400 hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="text-slate-400 hover:text-white transition-colors">Skills</a>
+                    <a href="#experience" class="text-slate-400 hover:text-white transition-colors">Experience</a>
+                    <a href="#projects" class="text-slate-400 hover:text-white transition-colors">Projects</a>
+                    <a href="#qa-lab" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping mr-1.5"></span>QA Lab</a>
+                    <a href="#contact" class="text-slate-400 hover:text-white transition-colors">Contact</a>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-blue-400 focus:outline-none text-xl">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </button>
+                    <button id="mobile-menu-btn" class="text-slate-400 hover:text-white focus:outline-none text-xl"><i class="fa-solid fa-bars-staggered"></i></button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 shadow-2xl">
-            <a href="#home" class="block text-slate-300 hover:text-blue-400 py-1">Home</a>
-            <a href="#about" class="block text-slate-300 hover:text-blue-400 py-1">About</a>
-            <a href="#skills" class="block text-slate-300 hover:text-blue-400 py-1">Skills</a>
-            <a href="#experience" class="block text-slate-300 hover:text-blue-400 py-1">Experience</a>
-            <a href="#projects" class="block text-slate-300 hover:text-blue-400 py-1">Projects</a>
-            <a href="#contact" class="block text-slate-300 hover:text-blue-400 py-1">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 border border-slate-800 rounded-xl mt-2 mx-2 p-4 space-y-3 shadow-2xl backdrop-blur-xl">
+            <a href="#home" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">Home</a>
+            <a href="#about" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">Skills</a>
+            <a href="#experience" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">Experience</a>
+            <a href="#projects" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">Projects</a>
+            <a href="#qa-lab" class="block text-blue-400 hover:text-blue-300 py-1 text-sm font-bold">QA Lab</a>
+            <a href="#contact" class="block text-slate-300 hover:text-blue-400 py-1 text-sm font-medium">Contact</a>
         </div>
     </nav>
 
-    <section id="home" class="gradient-mesh min-h-screen flex items-center pt-20 relative z-10">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 grid md:grid-cols-12 gap-12 items-center">
+    <section id="home" class="gradient-mesh min-h-screen flex items-center pt-28 relative z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 grid lg:grid-cols-12 gap-12 items-center">
             
-            <div class="md:col-span-7 space-y-6 text-center md:text-left animate__animated animate__fadeInLeft">
-                <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1.5 rounded-full text-blue-400 text-xs font-semibold uppercase tracking-wider">
-                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-                    <span>Available for Opportunities</span>
+            <div class="lg:col-span-6 space-y-6 text-center lg:text-left animate__animated animate__fadeInLeft">
+                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>System Architecture Secure</span>
                 </div>
-                <h1 class="text-5xl md:text-6xl font-black tracking-tight leading-none text-white">
-                    Hi, I'm <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Kunj Desai</span>
+                <h1 class="heading-font text-5xl sm:text-6xl font-black tracking-tight leading-none text-white">
+                    Quality Driven.<br><span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Code Defended.</span>
                 </h1>
-                <h2 class="text-xl md:text-2xl font-semibold text-slate-300">
-                    Computer Engineer & Senior QA Tester
-                </h2>
-                <p class="text-base text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                    With over 3 years of software engineering lifecycle expertise, I protect software ecosystems using meticulous manual/automation framework strategies, while engineering smart web backend nodes.
+                <p class="text-base text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    I am <strong class="text-slate-200">Kunj Desai</strong>, a Computer Engineer specializing in end-to-end SDLC/STLC defense pipelines, manual exploratory systems verification, and robust backend engineering stacks.
                 </p>
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
-                    <a href="#experience" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-1">
-                        Explore Experience <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#qa-lab" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-6 py-3 rounded-xl font-bold shadow-xl shadow-blue-900/30 transition-all transform hover:-translate-y-1 text-sm">
+                        Enter Interactive QA Lab <i class="fa-solid fa-flask-vial ml-2"></i>
                     </a>
-                    <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl font-bold transition-all transform hover:-translate-y-1">
-                        Let's Talk
+                    <a href="#experience" class="bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800/80 px-6 py-3 rounded-xl font-bold transition-all text-sm">
+                        View Projects
                     </a>
                 </div>
-                <div class="flex justify-center md:justify-start space-x-6 pt-6 text-xl text-slate-400">
-                    <a href="mailto:kunjd41@gmail.com" class="hover:text-blue-400 transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/KunjDesai" target="_blank" class="hover:text-blue-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <span class="text-sm self-center text-slate-500 font-medium"><i class="fa-solid fa-location-dot mr-2 text-blue-500"></i> Valsad, Gujarat</span>
+                <div class="flex justify-center lg:justify-start space-x-6 pt-6 text-xl text-slate-500">
+                    <a href="mailto:kunjd41@gmail.com" class="hover:text-blue-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/KunjDesai" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <span class="text-xs font-mono self-center text-slate-500 bg-slate-900 border border-slate-800 px-3 py-1 rounded-full"><i class="fa-solid fa-terminal mr-2 text-blue-500"></i> Valsad, GJ, IN</span>
                 </div>
             </div>
 
-            <div class="md:col-span-5 hidden md:block animate__animated animate__fadeInRight">
-                <div class="relative bg-slate-800/40 border border-slate-700/50 p-8 rounded-3xl backdrop-blur-sm shadow-2xl">
-                    <div class="flex items-center space-x-2 mb-6">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span class="text-xs font-mono text-slate-500 ml-2">system_metrics.sh</span>
-                    </div>
-                    <div class="font-mono text-sm space-y-4 text-slate-400">
-                        <p><span class="text-indigo-400"># Engineering Profile</span></p>
-                        <p><span class="text-blue-400">QA Experience:</span> 3+ Years Combined</p>
-                        <p><span class="text-blue-400">Core Engine:</span> SDLC / STLC Frameworks</p>
-                        <p><span class="text-blue-400">Defect Detection Rate:</span> <span class="text-emerald-400 font-bold">98%</span></p>
-                        <p><span class="text-blue-400">Primary Stack:</span> Manual QA, JIRA, PHP, Laravel, JS, IoT Integration</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-10 bg-slate-950/60 border-y border-slate-800 relative z-10">
-        <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <p class="text-3xl md:text-4xl font-extrabold text-white">98%</p>
-                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Defect Detection Accuracy</p>
-            </div>
-            <div>
-                <p class="text-3xl md:text-4xl font-extrabold text-white">20%</p>
-                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Resolution Time Reduced</p>
-            </div>
-            <div>
-                <p class="text-3xl md:text-4xl font-extrabold text-white">3+</p>
-                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Years Tech Experience</p>
-            </div>
-            <div>
-                <p class="text-3xl md:text-4xl font-extrabold text-white">5+</p>
-                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Enterprise Clients Served</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 relative z-10 reveal">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-12 gap-16 items-start">
-                
-                <div class="md:col-span-7 space-y-6">
-                    <h2 class="text-3xl font-extrabold text-white tracking-tight">
-                        About Me
-                        <span class="block w-12 h-1 bg-blue-500 mt-2 rounded"></span>
-                    </h2>
-                    <p class="text-slate-400 leading-relaxed text-lg">
-                        Highly motivated Computer Engineer with 3+ years of combined experience in Quality Assurance, Web Development (Full-Stack), and IoT Systems.
-                    </p>
-                    <p class="text-slate-400 leading-relaxed">
-                        Currently serving as a QA Tester, specializing in Manual Testing, Test Execution, and cross-functional collaboration. I bring a proven ability to deliver high-quality software by integrating meticulous Test Planning with deep technical knowledge of the SDLC and STLC frameworks.
-                    </p>
-                    <div class="bg-gradient-to-r from-blue-950/40 to-slate-900 border-l-4 border-blue-500 p-5 rounded-r-2xl">
-                        <p class="text-blue-300 font-medium italic text-sm">
-                            "Adept at utilizing JIRA for efficient Defect Reporting and bug tracking, always seeking to leverage development and testing expertise to ensure complete product excellence."
-                        </p>
-                    </div>
-                </div>
-
-                <div class="md:col-span-5 space-y-6">
-                    <h2 class="text-3xl font-extrabold text-white tracking-tight">
-                        Education History
-                        <span class="block w-12 h-1 bg-indigo-500 mt-2 rounded"></span>
-                    </h2>
-                    <div class="space-y-6">
-                        <div class="relative pl-6 border-l-2 border-slate-700">
-                            <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1.5 ring-4 ring-slate-900"></div>
-                            <h4 class="font-bold text-slate-200 text-base">Computer Engineering (CGPA: 7.78)</h4>
-                            <p class="text-sm text-blue-400 font-medium mt-0.5">Gujarat Technological University | Completed 2022</p>
+            <div class="lg:col-span-6 animate__animated animate__fadeInRight">
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-2xl shadow-2xl backdrop-blur-md overflow-hidden">
+                    <div class="bg-slate-950/80 px-4 py-3 border-b border-slate-800/80 flex items-center justify-between">
+                        <div class="flex space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
                         </div>
-                        <div class="relative pl-6 border-l-2 border-slate-700">
-                            <div class="absolute w-3 h-3 bg-slate-600 rounded-full -left-[7px] top-1.5 ring-4 ring-slate-900"></div>
-                            <h4 class="font-bold text-slate-300 text-sm">HSC (Higher Secondary)</h4>
-                            <p class="text-xs text-slate-500 mt-0.5">Shree Swaminarayan Dahiba High School, Valsad | Completed 2018</p>
+                        <span class="text-xs font-mono text-slate-500">bash — kunj@portfolio:~</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded font-mono">v2.6.5</span>
+                    </div>
+                    <div class="p-6 font-mono text-xs md:text-sm space-y-4 min-h-[280px] text-slate-300">
+                        <div>
+                            <p class="text-slate-500"># Run terminal diagnostics package info</p>
+                            <p class="text-emerald-400"><span class="text-indigo-400">guest@kunj_portfolio:~$</span> profile --fetch</p>
                         </div>
-                        <div class="relative pl-6 border-l-2 border-slate-700">
-                            <div class="absolute w-3 h-3 bg-slate-600 rounded-full -left-[7px] top-1.5 ring-4 ring-slate-900"></div>
-                            <h4 class="font-bold text-slate-300 text-sm">SSC (Secondary School)</h4>
-                            <p class="text-xs text-slate-500 mt-0.5">Bai Avabai High School, Valsad | Completed 2016</p>
+                        <div class="space-y-1 bg-slate-950/40 p-3 rounded-lg border border-slate-800/50">
+                            <p><span class="text-blue-400">ENGINEER:</span> Kunj Desai</p>
+                            <p><span class="text-blue-400">CORE WORK:</span> QA Engineering / Web Microservices / IoT</p>
+                            <p><span class="text-blue-400">LOCATION:</span> Valsad, Gujarat, India</p>
+                            <p><span class="text-blue-400">CERT:</span> NSDC Certified Software Tester (ID: CAN_19703506)</p>
+                        </div>
+                        <div id="terminal-output" class="text-slate-400 whitespace-pre-line text-xs font-semibold bg-slate-950/20 px-1">Type 'help' or 'skills' or 'clear' below to query data parameters.</div>
+                        <div class="flex items-center pt-2 border-t border-slate-800/50">
+                            <span class="text-indigo-400 mr-2">guest@kunj_portfolio:~$</span>
+                            <input type="text" id="terminal-input" class="bg-transparent text-emerald-400 focus:outline-none flex-1 font-mono text-xs md:text-sm" placeholder="..." autocomplete="off">
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
-    <section id="skills" class="py-24 bg-slate-950/40 border-y border-slate-800 relative z-10 reveal">
+    <section id="qa-lab" class="py-24 bg-slate-900/30 border-y border-slate-800/80 relative z-10 reveal">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-white tracking-tight">Skills & Expertise</h2>
-                <p class="text-sm text-slate-500 mt-2">A comprehensive toolkit spanning core Quality Assurance, systems architecture, and web microservices.</p>
+                <h2 class="heading-font text-3xl font-extrabold text-white tracking-tight">Interactive QA Laboratory</h2>
+                <p class="text-xs text-slate-500 mt-2">Test my verification intelligence: I deployed an intentionally "buggy" checkout algorithm form script below. Interact with the system options to isolate vulnerabilities!</p>
                 <span class="inline-block w-12 h-1 bg-blue-500 mt-3 rounded"></span>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl">
-                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-bug-slash"></i></div>
-                    <h3 class="text-lg font-bold text-white mb-4">Quality Assurance</h3>
-                    <ul class="text-slate-400 space-y-3 text-sm">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Black, White & Grey Box Testing</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>STLC / SDLC Methodologies</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>JIRA & Bugzilla Management</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Regression & Smoke Testing</li>
-                    </ul>
-                </div>
 
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl">
-                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-code"></i></div>
-                    <h3 class="text-lg font-bold text-white mb-4">Web Engineering</h3>
-                    <ul class="text-slate-400 space-y-3 text-sm">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>HTML5, CSS3 & JavaScript</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>PHP & Laravel Framework</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Object-Oriented Architecture</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Git Core Repository Controls</li>
-                    </ul>
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 grid md:grid-cols-12 gap-8 shadow-2xl">
+                <div class="md:col-span-5 space-y-4">
+                    <h3 class="font-bold text-sm text-slate-300 uppercase tracking-wider"><i class="fa-solid fa-sliders text-blue-500 mr-2"></i>Testing Parameters</h3>
+                    <div>
+                        <label class="block text-[11px] font-mono text-slate-500 mb-1">Coupon Test Case Entry</label>
+                        <input type="text" id="qa-coupon" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-blue-500" placeholder="e.g. DISCOUNT50">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-mono text-slate-500 mb-1">Quantity Request Payload</label>
+                        <input type="number" id="qa-qty" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-blue-500" value="1">
+                    </div>
+                    <button onclick="runSandboxTest()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider transition-all shadow-lg">Execute Transaction Test</button>
                 </div>
-
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl">
-                    <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-microchip"></i></div>
-                    <h3 class="text-lg font-bold text-white mb-4">IoT & Hardware</h3>
-                    <ul class="text-slate-400 space-y-3 text-sm">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Embedded Hardware Layouts</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Sensor Array Integration</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>Device Reliability Field Testing</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2.5 text-xs"></i>IoT Architecture Protocols</li>
-                    </ul>
+                
+                <div class="md:col-span-7 bg-slate-950 rounded-2xl border border-slate-800 p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+                            <span class="text-xs font-mono text-slate-400 font-bold"><i class="fa-solid fa-bug text-rose-500 mr-2"></i>STLC Sandbox Output Stream</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-slate-900 rounded border border-slate-800 font-mono text-slate-500">Status: Listening</span>
+                        </div>
+                        <div id="qa-log-box" class="font-mono text-xs space-y-1.5 text-slate-400 overflow-y-auto max-h-[160px]">
+                            <p class="text-slate-600">&gt; Initialize environment registers...</p>
+                            <p class="text-slate-600">&gt; Awaiting standard test case execution deployment metrics.</p>
+                        </div>
+                    </div>
+                    <div id="qa-bug-alert" class="hidden mt-4 p-3 bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs rounded-xl flex items-center space-x-2">
+                        <i class="fa-solid fa-triangle-exclamation animate-bounce"></i>
+                        <span><strong>Vulnerability Caught!</strong> Zero validation script handling discovered on custom negative payloads!</span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="mt-12 bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
-                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center md:text-left">Secondary Competencies</h4>
-                <div class="flex flex-wrap gap-2.5 justify-center md:justify-start">
-                    <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs font-medium px-3.5 py-1.5 rounded-xl"><i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i>Cybersecurity Analysis</span>
-                    <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs font-medium px-3.5 py-1.5 rounded-xl"><i class="fa-solid fa-magnifying-glass text-blue-400 mr-2"></i>SEO Optimization</span>
-                    <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs font-medium px-3.5 py-1.5 rounded-xl"><i class="fa-solid fa-eye text-indigo-400 mr-2"></i>High Observational Acumen</span>
-                    <span class="bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs font-medium px-3.5 py-1.5 rounded-xl"><i class="fa-solid fa-comments text-indigo-400 mr-2"></i>Cross-Functional Communication</span>
+    <section id="skills" class="py-24 relative z-10 reveal">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="heading-font text-3xl font-extrabold text-white tracking-tight">Technical Mastery</h2>
+                <span class="inline-block w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mt-3 rounded"></span>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl glow-card transition-all duration-300 group">
+                    <div class="w-10 h-10 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-lg mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 class="text-base font-bold text-white mb-4">Quality Assurance</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>Manual Test Case Design</span><span>95%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[95%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>Defect Tracking (JIRA/ClickUp)</span><span>90%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl glow-card transition-all duration-300 group">
+                    <div class="w-10 h-10 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-lg mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all"><i class="fa-solid fa-cubes"></i></div>
+                    <h3 class="text-base font-bold text-white mb-4">Web Architecture</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>PHP / Laravel Core</span><span>85%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-indigo-500 h-full w-[85%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>JS / Full-Stack Integration</span><span>80%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-indigo-500 h-full w-[80%]"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl glow-card transition-all duration-300 group">
+                    <div class="w-10 h-10 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-lg mb-4 group-hover:bg-cyan-600 group-hover:text-white transition-all"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 class="text-base font-bold text-white mb-4">IoT & Embedded Fields</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>Sensor Array Mapping</span><span>85%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-cyan-500 h-full w-[85%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-400 mb-1"><span>Hardware Functional Verification</span><span>90%</span></div>
+                            <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div class="bg-cyan-500 h-full w-[90%]"></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,11 +241,13 @@
     <section id="experience" class="py-24 relative z-10 reveal">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-xl mx-auto mb-20">
-                <h2 class="text-3xl font-extrabold text-white tracking-tight">Professional Timeline</h2>
-                <span class="inline-block w-12 h-1 bg-indigo-500 mt-3 rounded"></span>
+                <h2 class="heading-font text-3xl font-extrabold text-white tracking-tight">Professional History</h2>
+                <span class="inline-block w-12 h-1 bg-blue-500 mt-3 rounded"></span>
             </div>
 
-            <div class="relative border-l border-slate-800 ml-4 md:ml-32">
+            <div class="relative border-l border-slate-800/80 ml-4 md:ml-32">
                 
                 <div class="mb-14 relative pl-8 group">
-                    <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6px] top-2 ring-4 ring-slate-900 group-hover:sca
+                    <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6px] top-2 ring-4 ring-slate-950 group-hover:scale-125 transition-transform"></div>
+                    <div class="absolute left-[-150px] top-1 hidden md:block text-right w-28">
+                        <span class="text-xs font-mono font-bold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-md
